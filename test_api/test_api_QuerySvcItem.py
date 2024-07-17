@@ -31,7 +31,7 @@ def test_api_QuerySvcItemAPIs_success(data_dict, get_session):
         keys_to_compare = ["return_code", "return_msg", "ref_id", "uid", "svc_item", "plan_code"]
 
         for key in keys_to_compare:
-            ObjectUtils.equal_str(key, excel_result_data[key], response_data[key])
+            ObjectUtils.equal_str(key, excel_result_data[key], response_data[key]) 
 
     except Exception as e:
         logging.exception(f"An error occurred: {e}")
