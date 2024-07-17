@@ -11,8 +11,4 @@ def process_excel_data(file_name, sheet_name):
     # 每一行 DataFrame 變成列表中的一個字典，每個字典的鍵是列名，值是該行相應列的數據
     data_dicts = df.to_dict(orient='records')
 
-    logging.info("Jack___________________________ pandas")
-    logging.info(data_dicts)
-    
-
     return data_dicts
