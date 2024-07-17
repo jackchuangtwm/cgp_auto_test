@@ -25,7 +25,7 @@ def test_api_QuerySvcItemAPIs_success(data_dict, get_session):
         if response.status_code != 200:
             logging.error(f"Failed to retrieve data. Status code: {response.status_code}")
             return
-        
+
         response_data = response.json()    
         excel_result_data = json.loads(excel_result)
         keys_to_compare = ["return_code", "return_msg", "ref_id", "uid", "svc_item", "plan_code"]
