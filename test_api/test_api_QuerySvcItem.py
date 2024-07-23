@@ -1,10 +1,13 @@
 import pytest
 import logging
 import json
+import warnings
 
 from test_data.get_data_from_excel import process_excel_data
 from api_objects.QuerySvcItemAPIs import QuerySvcItemAPIs
 from utils.object_utils import ObjectUtils
+
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 # EXCEL 路徑
 file_path = r'test_data/QuerySvcItemAPIs_TestCase.xlsx'
