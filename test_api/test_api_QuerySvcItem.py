@@ -27,6 +27,7 @@ def test_api_QuerySvcItemAPIs_success(data_dict, get_session):
     
         if response.status_code != 200:
             logging.error(f"Failed to retrieve data. Status code: {response.status_code}")
+            assert response.status_code == 200, f"Failed to retrieve data. Status code: {response.status_code}"
             return
 
         response_data = response.json()    
