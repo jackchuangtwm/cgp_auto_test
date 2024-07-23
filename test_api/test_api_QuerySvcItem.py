@@ -17,7 +17,7 @@ data_dicts = process_excel_data(file_path, sheet_name)
 
 @pytest.mark.parametrize('data_dict', data_dicts)
 def test_api_QuerySvcItemAPIs_success(data_dict, get_session):
-    with allure.step('QuerySvcItemAPIs_success'):
+    with allure.step('Test API QuerySvcItemAPIs Success'):
 
         headers = data_dict['Authorization']
         request_body = data_dict['Body'] 
