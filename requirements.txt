@@ -5,3 +5,5 @@ pytest-rerunfailures==14.0
 pytest-xdist==3.6.1
 python-dotenv==1.0.1
 requests==2.31.0
+allure-pytest==2.13.5
+allure-python-commons==2.13.5
